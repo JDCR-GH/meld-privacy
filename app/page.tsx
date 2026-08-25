@@ -33,8 +33,8 @@ export default function Home() {
             You control what Meld can access. Your information is used to
             operate your account, understand your training, provide personalized
             coaching, and improve the reliability and safety of the service. You
-            can disconnect connected services or delete your Meld account in the
-            app.
+            can disconnect WHOOP in Meld, change Apple Health access in the
+            Health app, or delete your Meld account in the app.
           </p>
         </aside>
 

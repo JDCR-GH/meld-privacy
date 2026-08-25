@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "en-US"
+early_access: false
+
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  review_details: false
+  in_progress_fortune: false
+  enable_prompt_for_ai_agents: false
+
+  auto_review:
+    enabled: true
+    drafts: false
+
+  path_filters:
+    - "!docs/_next/**"
+    - "!docs/**/*.txt"
+    - "!**/.DS_Store"
+
+  path_instructions:
+    - path: "**/*"
+      instructions: |
+        Keep reviews high-signal. Comment only when an issue can cause inaccurate privacy
+        disclosures, broken public access, security or privacy risk, accessibility failure,
+        production build failure, or a meaningful regression. Do not comment on formatting,
+        naming preferences, stylistic refactors, or minor wording unless accuracy is affected.
+
+    - path: "app/**"
+      instructions: |
+        Verify privacy statements against the described Meld behavior, especially Apple Health,
+        WHOOP, OpenAI, account deletion, retention, user controls, and the no-sale/no-advertising
+        commitments. Check semantic HTML, responsive behavior, metadata, and external links.
+
+    - path: "docs/**"
+      instructions: |
+        This directory is generated static output. Flag only broken paths, missing assets,
+        accidentally exposed secrets, or output that contradicts the source page.
+
+chat:
+  auto_reply: true

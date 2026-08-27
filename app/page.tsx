@@ -5,6 +5,7 @@ const providerLinks = [
   ["WHOOP", "https://www.whoop.com/us/en/full-privacy-policy/"],
 ] as const;
 
+/** Renders Meld's complete public privacy policy. */
 export default function Home() {
   return (
     <main>
@@ -22,7 +23,7 @@ export default function Home() {
             training and coach you. We do not sell your personal information or
             use health and fitness data for advertising.
           </p>
-          <p className="effective"><strong>Effective:</strong> August 25, 2026</p>
+          <p className="effective"><strong>Effective:</strong> August 27, 2026</p>
         </div>
       </header>
 
@@ -46,7 +47,7 @@ export default function Home() {
             <li><strong>Apple Health information:</strong> only the categories you approve: workouts, sleep analysis, heart-rate variability, resting heart rate, heart rate, walking and running distance, and active energy burned. Meld may write workouts you complete with Meld back to Apple Health when you approve that access.</li>
             <li><strong>WHOOP information:</strong> when you connect WHOOP, Meld may import the categories you approve, including profile, cycles, recovery, sleep, workouts, height, weight, and maximum heart rate.</li>
             <li><strong>Conversations and content:</strong> voice transcripts, typed messages, coaching responses, and structured facts needed for coaching memory.</li>
-            <li><strong>Photos:</strong> equipment or machine photos you choose to submit for identification. They are analyzed to answer your request and are not added to workout history unless you separately confirm workout details.</li>
+            <li><strong>Photos and nutrition information:</strong> equipment, machine, or food photos you choose to submit for analysis, plus nutrition estimates and optional details you provide, such as portion size, ingredients, cooking oil, meal type, and notes. Submitted photos are processed to answer your request but are not stored by Meld. A nutrition estimate is saved to your history only after you confirm it.</li>
             <li><strong>Purchase information:</strong> subscription status and transaction identifiers made available through Apple. Meld does not receive your full payment-card details.</li>
             <li><strong>Technical information:</strong> limited request, error, device, and security information needed to operate, protect, and troubleshoot the service.</li>
           </ul>
@@ -55,7 +56,7 @@ export default function Home() {
         <PolicySection number="02" title="How Meld uses information">
           <p>We use information to:</p>
           <ul>
-            <li>provide voice and text coaching, remember prior training, build and adjust plans, recognize equipment, and log workouts;</li>
+            <li>provide voice and text coaching, remember prior training, build and adjust plans, recognize equipment, estimate food nutrition, and log workouts or meals you confirm;</li>
             <li>connect and synchronize Apple Health and WHOOP when you ask us to;</li>
             <li>operate authentication, subscriptions, support, safety, fraud prevention, and account deletion;</li>
             <li>maintain and improve the reliability, quality, and safety of Meld; and</li>
@@ -65,8 +66,8 @@ export default function Home() {
         </PolicySection>
 
         <PolicySection number="03" title="AI processing">
-          <p>Meld uses OpenAI services to provide coaching, speech, transcription, and equipment recognition. To produce a response, relevant parts of your prompt, conversation, photo, profile, training history, and approved health or fitness context may be sent to OpenAI. Meld limits this context to what is reasonably needed for the feature you requested.</p>
-          <p>AI output can be incomplete or wrong. Meld is a fitness coaching tool, not a medical provider, and it does not diagnose or treat medical conditions. Stop exercising and seek qualified medical help when appropriate.</p>
+          <p>Meld uses OpenAI services to provide coaching, speech, transcription, equipment recognition, and food-photo nutrition estimates. To produce a response, relevant parts of your prompt, conversation, photo, profile, training history, nutrition history, and approved health or fitness context may be sent to OpenAI. Meld limits this context to what is reasonably needed for the feature you requested.</p>
+          <p>AI output can be incomplete or wrong. Food-photo calories and macronutrients are estimates, especially when ingredients, cooking methods, or portions are not visible. Meld is a fitness coaching tool, not a medical provider, and it does not diagnose or treat medical conditions. Stop exercising and seek qualified medical help when appropriate.</p>
         </PolicySection>
 
         <PolicySection number="04" title="When information is shared">
@@ -88,7 +89,7 @@ export default function Home() {
         </PolicySection>
 
         <PolicySection number="05" title="Retention and deletion">
-          <p>We retain account, coaching, and training information while your account is active and as needed to provide Meld. We may retain limited records longer when reasonably necessary for security, dispute resolution, legal compliance, or enforcement. Backup copies may remain for a limited period before they are overwritten.</p>
+          <p>We retain account, coaching, training, and confirmed nutrition information while your account is active and as needed to provide Meld. Food and equipment photos are processed for the requested analysis and are not stored by Meld. You can delete individual nutrition entries in the app. We may retain limited records longer when reasonably necessary for security, dispute resolution, legal compliance, or enforcement. Backup copies may remain for a limited period before they are overwritten.</p>
           <p>You can delete your account from Meld&apos;s profile settings. Account deletion removes your Meld account and associated server-side product data, subject to the limited exceptions above. Disconnecting WHOOP revokes Meld&apos;s connection and deletes its stored access credentials, stopping future WHOOP synchronization. Information already imported into your Meld history remains until you delete it or delete your account.</p>
         </PolicySection>
 
@@ -96,7 +97,7 @@ export default function Home() {
           <ul>
             <li>Choose which Apple Health categories to approve, and change access later in the Health app.</li>
             <li>Connect or disconnect WHOOP from Meld&apos;s profile settings.</li>
-            <li>Correct profile and workout information through Meld.</li>
+            <li>Correct profile and workout information, or delete saved nutrition entries, through Meld.</li>
             <li>Delete your Meld account and associated server-side product data in the app.</li>
             <li>Contact us to ask about access, correction, deletion, restriction, portability, or objection rights available where you live.</li>
           </ul>
@@ -130,6 +131,7 @@ export default function Home() {
   );
 }
 
+/** Renders one numbered section of the public Meld privacy policy. */
 function PolicySection({
   number,
   title,

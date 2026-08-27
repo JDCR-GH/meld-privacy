@@ -5,6 +5,7 @@ const providerLinks = [
   ["WHOOP", "https://www.whoop.com/us/en/full-privacy-policy/"],
 ] as const;
 
+/** Renders Meld's complete public privacy policy. */
 export default function Home() {
   return (
     <main>

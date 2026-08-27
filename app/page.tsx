@@ -130,6 +130,7 @@ export default function Home() {
   );
 }
 
+/** Renders one numbered section of the public Meld privacy policy. */
 function PolicySection({
   number,
   title,

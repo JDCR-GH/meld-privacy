@@ -34,8 +34,9 @@ export default function Home() {
             You control what Meld can access. Your information is used to
             operate your account, understand your training, provide personalized
             coaching, and improve the reliability and safety of the service. You
-            can disconnect WHOOP in Meld, change Apple Health access in the
-            Health app, or delete your Meld account in the app.
+            choose whether OpenAI may process your personal data for AI features.
+            You can withdraw that permission, disconnect WHOOP, change Apple
+            Health access, or delete your Meld account from the available controls.
           </p>
         </aside>
 
@@ -66,7 +67,8 @@ export default function Home() {
         </PolicySection>
 
         <PolicySection number="03" title="AI processing">
-          <p>Meld uses OpenAI services to provide coaching, live speech, equipment recognition, and food-photo nutrition estimates. Live voice audio and its transcript are sent to OpenAI for the active conversation. Message dictation is processed on-device where available or by Apple Speech. Meld sends the editable dictation transcript to OpenAI only after you tap Send. To produce a response, relevant parts of your prompt, conversation, photo, profile, training history, nutrition history, and approved health or fitness context may also be sent to OpenAI. Meld limits this context to what is reasonably needed for the feature you requested.</p>
+          <p>Before Meld sends personal data to OpenAI, Meld identifies OpenAI, describes the relevant data categories and purposes, and asks you to choose Allow and continue. This permission is stored for your Meld account. If you choose Not now, AI coaching, live voice, equipment recognition, and food-photo analysis remain paused. Today, Progress, account controls, and manual workout logging remain available.</p>
+          <p>When you allow processing, Meld uses OpenAI services to provide coaching, live speech, equipment recognition, and food-photo nutrition estimates. Live voice audio and its transcript are sent to OpenAI for the active conversation. Message dictation is processed on-device where available or by Apple Speech. Meld sends the editable dictation transcript to OpenAI only after you tap Send. To produce a response, relevant parts of your prompt, conversation, photo, profile, training history, nutrition history, and approved health or fitness context may also be sent to OpenAI. Meld limits this context to what is reasonably needed for the feature you requested.</p>
           <p>AI output can be incomplete or wrong. Food-photo calories and macronutrients are estimates, especially when ingredients, cooking methods, or portions are not visible. Meld is a fitness coaching tool, not a medical provider, and it does not diagnose or treat medical conditions. Stop exercising and seek qualified medical help when appropriate.</p>
         </PolicySection>
 
@@ -95,6 +97,7 @@ export default function Home() {
 
         <PolicySection number="06" title="Your choices and rights">
           <ul>
+            <li>Allow or decline OpenAI processing when Meld first asks, and withdraw or grant that permission later from Profile &gt; Privacy &amp; Safety.</li>
             <li>Choose which Apple Health categories to approve, and change access later in the Health app.</li>
             <li>Connect or disconnect WHOOP from Meld&apos;s profile settings.</li>
             <li>Correct profile and workout information, or delete saved nutrition entries, through Meld.</li>

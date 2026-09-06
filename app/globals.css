@@ -31,6 +31,8 @@ main {
 
 .hero { padding: 44px 0 72px; }
 
+.support-hero h1 { max-width: 760px; }
+
 .brand {
   display: inline-flex;
   align-items: center;

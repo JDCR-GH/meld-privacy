@@ -23,7 +23,7 @@ export default function Home() {
             training and coach you. We do not sell your personal information or
             use health and fitness data for advertising.
           </p>
-          <p className="effective"><strong>Effective:</strong> August 27, 2026</p>
+          <p className="effective"><strong>Effective:</strong> September 6, 2026</p>
         </div>
       </header>
 
@@ -46,7 +46,7 @@ export default function Home() {
             <li><strong>Training information:</strong> plans, workouts, exercises, sets, repetitions, weights, pace, distance, duration, progress, readiness, and your edits or confirmations.</li>
             <li><strong>Apple Health information:</strong> only the categories you approve: workouts, sleep analysis, heart-rate variability, resting heart rate, heart rate, walking and running distance, and active energy burned. Meld may write workouts you complete with Meld back to Apple Health when you approve that access.</li>
             <li><strong>WHOOP information:</strong> when you connect WHOOP, Meld may import the categories you approve, including profile, cycles, recovery, sleep, workouts, height, weight, and maximum heart rate.</li>
-            <li><strong>Conversations and content:</strong> microphone audio you choose to send during dictation or live voice, voice transcripts, typed messages, coaching responses, and structured facts needed for coaching memory. Microphone audio is processed for the requested voice feature and is not saved to your Meld account.</li>
+            <li><strong>Conversations and content:</strong> live voice microphone audio, message-dictation audio, voice transcripts, typed messages, coaching responses, and structured facts needed for coaching memory. Live voice audio is sent to OpenAI. Message dictation is processed on-device where available or by Apple Speech. The editable transcript is sent to Meld and OpenAI only after you tap Send. Microphone audio is processed for the requested voice feature and is not saved to your Meld account.</li>
             <li><strong>Photos and nutrition information:</strong> equipment, machine, or food photos you choose to submit for analysis, plus nutrition estimates and optional details you provide, such as portion size, ingredients, cooking oil, meal type, and notes. Submitted photos are processed to answer your request but are not stored by Meld. A nutrition estimate is saved to your history only after you confirm it.</li>
             <li><strong>Purchase information:</strong> subscription status and transaction identifiers made available through Apple. Meld does not receive your full payment-card details.</li>
             <li><strong>Technical information:</strong> limited request, error, device, and security information needed to operate, protect, and troubleshoot the service.</li>
@@ -66,7 +66,7 @@ export default function Home() {
         </PolicySection>
 
         <PolicySection number="03" title="AI processing">
-          <p>Meld uses OpenAI services to provide coaching, speech, transcription, equipment recognition, and food-photo nutrition estimates. When you use dictation or live voice, microphone audio and its transcript may be sent to OpenAI for speech processing. To produce a response, relevant parts of your prompt, conversation, photo, profile, training history, nutrition history, and approved health or fitness context may also be sent to OpenAI. Meld limits this context to what is reasonably needed for the feature you requested.</p>
+          <p>Meld uses OpenAI services to provide coaching, live speech, equipment recognition, and food-photo nutrition estimates. Live voice audio and its transcript are sent to OpenAI for the active conversation. Message dictation is processed on-device where available or by Apple Speech. Meld sends the editable dictation transcript to OpenAI only after you tap Send. To produce a response, relevant parts of your prompt, conversation, photo, profile, training history, nutrition history, and approved health or fitness context may also be sent to OpenAI. Meld limits this context to what is reasonably needed for the feature you requested.</p>
           <p>AI output can be incomplete or wrong. Food-photo calories and macronutrients are estimates, especially when ingredients, cooking methods, or portions are not visible. Meld is a fitness coaching tool, not a medical provider, and it does not diagnose or treat medical conditions. Stop exercising and seek qualified medical help when appropriate.</p>
         </PolicySection>
 

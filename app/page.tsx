@@ -128,7 +128,11 @@ export default function Home() {
       <footer>
         <span className="footer-mark" aria-hidden="true">m</span>
         <p>© 2026 Meld. Your training is personal. We treat it that way.</p>
-        <a href="#top">Back to top</a>
+        <nav className="footer-links" aria-label="Legal and support">
+          <a href="/meld-privacy/terms/">Terms</a>
+          <a href="/meld-privacy/support/">Support</a>
+          <a href="#top">Back to top</a>
+        </nav>
       </footer>
     </main>
   );

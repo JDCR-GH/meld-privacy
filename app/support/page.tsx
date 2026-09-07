@@ -85,7 +85,11 @@ export default function Support() {
       <footer>
         <span className="footer-mark" aria-hidden="true">m</span>
         <p>© 2026 Meld.</p>
-        <a href="#top">Back to top</a>
+        <nav className="footer-links" aria-label="Legal and support">
+          <a href="/meld-privacy/">Privacy</a>
+          <a href="/meld-privacy/terms/">Terms</a>
+          <a href="#top">Back to top</a>
+        </nav>
       </footer>
     </main>
   );

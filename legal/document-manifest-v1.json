@@ -1,0 +1,23 @@
+{
+  "manifestVersion": 1,
+  "documents": [
+    {
+      "id": "meld.terms.v1",
+      "type": "terms_of_use",
+      "version": 1,
+      "effectiveDate": "2026-09-07",
+      "url": "https://jdcr-gh.github.io/meld-privacy/terms/",
+      "sourcePath": "app/terms/page.tsx",
+      "sourceSha256": "484020bff1beaf7e82f83b47a7ed20df3832f6d657e1aad654aec44048ed4dcc"
+    },
+    {
+      "id": "meld.privacy.v1",
+      "type": "privacy_policy",
+      "version": 1,
+      "effectiveDate": "2026-09-07",
+      "url": "https://jdcr-gh.github.io/meld-privacy/",
+      "sourcePath": "app/page.tsx",
+      "sourceSha256": "00f51cb00c126bcfdd66ce8ce3f13f5db9cee55c91cbffcdb61e054527f94ba2"
+    }
+  ]
+}

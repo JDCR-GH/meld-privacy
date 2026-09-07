@@ -35,6 +35,30 @@ if (!sourceManifestBytes.equals(deployedManifestBytes)) {
 const manifest = JSON.parse(sourceManifestBytes.toString("utf8"));
 const commit = manifest.canonicalCommit;
 const expectedRepository = "https://github.com/JDCR-GH/meld-privacy";
+const expectedPublishedUrl =
+  "https://jdcr-gh.github.io/meld-privacy/legal/document-manifest-v1.json";
+const expectedDocuments = [
+  {
+    id: "meld.terms.v1",
+    type: "terms_of_use",
+    version: 1,
+    effectiveDate: "2026-09-07",
+    url: "https://jdcr-gh.github.io/meld-privacy/terms/",
+    sourcePath: "app/terms/page.tsx",
+    sourceSha256:
+      "484020bff1beaf7e82f83b47a7ed20df3832f6d657e1aad654aec44048ed4dcc",
+  },
+  {
+    id: "meld.privacy.v1",
+    type: "privacy_policy",
+    version: 1,
+    effectiveDate: "2026-09-07",
+    url: "https://jdcr-gh.github.io/meld-privacy/",
+    sourcePath: "app/page.tsx",
+    sourceSha256:
+      "00f51cb00c126bcfdd66ce8ce3f13f5db9cee55c91cbffcdb61e054527f94ba2",
+  },
+];
 
 if (!/^[0-9a-f]{40}$/.test(commit)) {
   throw new Error("canonicalCommit must be a full 40-character Git commit SHA.");
@@ -46,6 +70,27 @@ if (manifest.canonicalRepository !== expectedRepository) {
 
 if (manifest.hashAlgorithm !== "SHA-256") {
   throw new Error(`Unsupported hash algorithm: ${manifest.hashAlgorithm}`);
+}
+
+if (
+  manifest.manifestVersion !== 1 ||
+  manifest.policyVersion !== 1 ||
+  manifest.publishedUrl !== expectedPublishedUrl ||
+  !Array.isArray(manifest.documents) ||
+  manifest.documents.length !== expectedDocuments.length
+) {
+  throw new Error("The legal manifest does not match the fixed v1 release metadata.");
+}
+
+for (const [index, expectedDocument] of expectedDocuments.entries()) {
+  const document = manifest.documents[index];
+  for (const [field, expectedValue] of Object.entries(expectedDocument)) {
+    if (document?.[field] !== expectedValue) {
+      throw new Error(
+        `Unexpected ${field} for v1 document record ${index + 1}.`,
+      );
+    }
+  }
 }
 
 const resolvedCommit = execFileSync(
@@ -89,6 +134,7 @@ for (const document of manifest.documents) {
     const response = await fetch(document.canonicalRawUrl, {
       headers: { "user-agent": "meld-legal-verifier/1" },
       redirect: "follow",
+      signal: AbortSignal.timeout(10_000),
     });
 
     if (!response.ok) {
@@ -110,6 +156,7 @@ for (const document of manifest.documents) {
   );
 }
 
+/** Returns the lowercase SHA-256 digest for canonical document bytes. */
 function sha256(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
 }

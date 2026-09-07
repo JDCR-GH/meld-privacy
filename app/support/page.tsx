@@ -62,11 +62,13 @@ export default function Support() {
 
         <SupportSection number="03" title="Account and data">
           <p>
-            You can update your name and coaching preferences from Profile. To
-            delete your Meld account and associated server-side product data,
-            choose Delete account in Profile. Limited records and temporary backup
-            copies may remain for the reasons described in the Privacy Policy.
-            Deleting Meld does not cancel an Apple subscription.
+            You can update your name and coaching preferences from Profile.
+            Signed-in or subscribed users can choose Delete account in Profile.
+            Anonymous users can open Account on the Meld Pro screen and choose
+            Delete account. Account deletion removes your Meld account and
+            associated server-side product data. Limited records and temporary
+            backup copies may remain for the reasons described in the Privacy
+            Policy. Deleting Meld does not cancel an Apple subscription.
           </p>
         </SupportSection>
 

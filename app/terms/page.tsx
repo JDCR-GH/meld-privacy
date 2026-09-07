@@ -70,7 +70,10 @@ export default function Terms() {
           </p>
           <p>
             Your license to the iOS application is governed by Apple&apos;s <a href={standardEula} target="_blank" rel="noreferrer">Standard Licensed Application End User License Agreement</a>.
-            These Terms supplement that license and govern the Meld Service.
+            These Terms supplement that license and govern the Meld Service. If
+            these Terms conflict with Apple&apos;s Standard EULA concerning the license
+            or use of the iOS application, Apple&apos;s Standard EULA controls only to
+            the extent of that conflict. These Terms otherwise govern the Service.
           </p>
         </TermsSection>
 
@@ -277,6 +280,10 @@ export default function Terms() {
             including liability for fraud, willful misconduct, or personal injury caused
             by negligence where applicable law prohibits that limitation. Your local law
             may provide additional rights.
+          </p>
+          <p>
+            For a claim governed by Apple&apos;s Standard EULA, its limitation of
+            liability controls to the extent it conflicts with this section.
           </p>
         </TermsSection>
 

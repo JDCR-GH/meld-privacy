@@ -34,6 +34,11 @@ export default function Terms() {
             of Meld&apos;s AI-powered fitness and nutrition features.
           </p>
           <p className="effective"><strong>Effective:</strong> September 7, 2026. <strong>Version:</strong> 1</p>
+          <p className="version-record">
+            <a href="/meld-privacy/legal/document-manifest-v1.json">
+              Version record: meld.terms.v1
+            </a>
+          </p>
         </div>
       </header>
 

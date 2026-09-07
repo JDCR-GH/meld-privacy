@@ -17,6 +17,7 @@ const standardEula =
   "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/";
 
 /** Renders Meld's public Terms of Use. */
+/** Renders the published Meld terms and immutable version record. */
 export default function Terms() {
   return (
     <main>
@@ -34,6 +35,11 @@ export default function Terms() {
             of Meld&apos;s AI-powered fitness and nutrition features.
           </p>
           <p className="effective"><strong>Effective:</strong> September 7, 2026. <strong>Version:</strong> 1</p>
+          <p className="version-record">
+            <a href="/meld-privacy/legal/document-manifest-v1.json">
+              Version record: meld.terms.v1
+            </a>
+          </p>
         </div>
       </header>
 
@@ -364,6 +370,7 @@ export default function Terms() {
   );
 }
 
+/** Renders one titled section of the Terms of Use. */
 function TermsSection({
   number,
   title,

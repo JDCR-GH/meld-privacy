@@ -100,6 +100,11 @@ h1 {
   font-size: 14px;
 }
 
+.version-record {
+  margin: 6px 0 0;
+  font-size: 14px;
+}
+
 .summary {
   margin-bottom: 34px;
   padding: 30px;

@@ -65,15 +65,20 @@ export default function Terms() {
           </p>
           <p>
             You must be at least 18 years old and legally capable of entering into
-            this agreement to create an account or use personalized coaching. The
-            Service is intended for personal, noncommercial use.
+            this agreement to access or use the Service. The Service is intended
+            for personal, noncommercial use.
           </p>
           <p>
             Your license to the iOS application is governed by Apple&apos;s <a href={standardEula} target="_blank" rel="noreferrer">Standard Licensed Application End User License Agreement</a>.
-            These Terms supplement that license and govern the Meld Service. If
-            these Terms conflict with Apple&apos;s Standard EULA concerning the license
-            or use of the iOS application, Apple&apos;s Standard EULA controls only to
-            the extent of that conflict. These Terms otherwise govern the Service.
+            These Terms supplement and do not replace Apple&apos;s Standard EULA.
+            Apple&apos;s Standard EULA governs the license to and use of the iOS
+            application, together with content, materials, subscriptions, and
+            services accessed from or purchased within it, to the extent that the
+            Standard EULA applies. These Terms provide additional rules for your
+            Meld account and Service use. If the agreements conflict concerning the
+            iOS application, an App Store subscription, or an in-app service,
+            Apple&apos;s Standard EULA controls to the extent of that conflict. These
+            Terms otherwise control.
           </p>
         </TermsSection>
 

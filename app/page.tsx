@@ -92,7 +92,7 @@ export default function Home() {
 
         <PolicySection number="05" title="Retention and deletion">
           <p>We retain account, coaching, training, and confirmed nutrition information while your account is active and as needed to provide Meld. Food and equipment photos are processed for the requested analysis and are not stored by Meld. You can delete individual nutrition entries in the app. We may retain limited records longer when reasonably necessary for security, dispute resolution, legal compliance, or enforcement. Backup copies may remain for a limited period before they are overwritten.</p>
-          <p>You can delete your account from Meld&apos;s profile settings. Account deletion removes your Meld account and associated server-side product data, subject to the limited exceptions above. Disconnecting WHOOP revokes Meld&apos;s connection and deletes its stored access credentials, stopping future WHOOP synchronization. Information already imported into your Meld history remains until you delete it or delete your account.</p>
+          <p>Signed-in or subscribed users can choose Delete account in Profile. Anonymous users can open Account on the Meld Pro screen and choose Delete account. Account deletion removes your Meld account and associated server-side product data, subject to the limited exceptions above. Disconnecting WHOOP revokes Meld&apos;s connection and deletes its stored access credentials, stopping future WHOOP synchronization. Information already imported into your Meld history remains until you delete it or delete your account.</p>
         </PolicySection>
 
         <PolicySection number="06" title="Your choices and rights">

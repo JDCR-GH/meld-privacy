@@ -23,7 +23,7 @@ export default function Home() {
             training and coach you. We do not sell your personal information or
             use health and fitness data for advertising.
           </p>
-          <p className="effective"><strong>Effective:</strong> September 6, 2026</p>
+          <p className="effective"><strong>Effective:</strong> September 7, 2026. <strong>Version:</strong> 1</p>
         </div>
       </header>
 
@@ -50,6 +50,7 @@ export default function Home() {
             <li><strong>Conversations and content:</strong> live voice microphone audio, message-dictation audio, voice transcripts, typed messages, coaching responses, and structured facts needed for coaching memory. After you allow OpenAI processing, live voice audio is sent to OpenAI for the active conversation. Message dictation is processed on-device where available or by Apple Speech. The editable transcript is sent to Meld and OpenAI only after you tap Send. Microphone audio is processed for the requested voice feature and is not saved to your Meld account.</li>
             <li><strong>Photos and nutrition information:</strong> equipment, machine, or food photos you choose to submit for analysis, plus nutrition estimates and optional details you provide, such as portion size, ingredients, cooking oil, meal type, and notes. Submitted photos are processed to answer your request but are not stored by Meld. A nutrition estimate is saved to your history only after you confirm it.</li>
             <li><strong>Purchase information:</strong> subscription status and transaction identifiers made available through Apple. Meld does not receive your full payment-card details.</li>
+            <li><strong>Legal acceptance information:</strong> your account identifier, the versions and identifiers of the Terms of Use and Privacy Policy presented to you, and the server time when you agreed and acknowledged them.</li>
             <li><strong>Technical information:</strong> limited request, error, device, and security information needed to operate, protect, and troubleshoot the service.</li>
           </ul>
         </PolicySection>
@@ -81,7 +82,7 @@ export default function Home() {
             <li><strong>A successor:</strong> if Meld is involved in a merger, financing, acquisition, reorganization, or sale of assets, subject to appropriate confidentiality and notice where required.</li>
           </ul>
           <p>
-            These providers process information under their own terms and privacy commitments. Read the {providerLinks.map(([name, href], index) => (
+            We select service providers with privacy and security commitments appropriate to their roles and require them to handle information consistently with applicable agreements and law. These providers also process information under their own terms and privacy commitments. Read the {providerLinks.map(([name, href], index) => (
               <span key={name}>
                 <a href={href} target="_blank" rel="noreferrer">{name} Privacy Policy</a>
                 {index < providerLinks.length - 2 ? ", " : index === providerLinks.length - 2 ? ", and " : "."}
@@ -92,6 +93,7 @@ export default function Home() {
 
         <PolicySection number="05" title="Retention and deletion">
           <p>We retain account, coaching, training, and confirmed nutrition information while your account is active and as needed to provide Meld. Food and equipment photos are processed for the requested analysis and are not stored by Meld. You can delete individual nutrition entries in the app. We may retain limited records longer when reasonably necessary for security, dispute resolution, legal compliance, or enforcement. Backup copies may remain for a limited period before they are overwritten.</p>
+          <p>A minimal legal-acceptance receipt may remain for up to seven years after account deletion. That receipt contains a one-way account identifier, document versions and identifiers, the original acceptance time, and the account-deletion time. It does not contain your name, email, conversations, workouts, meals, photos, or health data.</p>
           <p>Signed-in or subscribed users can choose Delete account in Profile. Anonymous users can open Account on the Meld Pro screen and choose Delete account. Account deletion removes your Meld account and associated server-side product data, subject to the limited exceptions above. Disconnecting WHOOP revokes Meld&apos;s connection and deletes its stored access credentials, stopping future WHOOP synchronization. Information already imported into your Meld history remains until you delete it or delete your account.</p>
         </PolicySection>
 
@@ -113,7 +115,7 @@ export default function Home() {
         </PolicySection>
 
         <PolicySection number="08" title="Children">
-          <p>Meld is not directed to children under 13, or a higher minimum age where required by local law. If you believe a child has provided personal information without appropriate permission, contact us so we can investigate and delete it.</p>
+          <p>Meld is intended only for people who are at least 18 years old and legally capable of agreeing to its Terms of Use. If you believe a child has provided personal information, contact us so we can investigate and delete it.</p>
         </PolicySection>
 
         <PolicySection number="09" title="Changes to this policy">

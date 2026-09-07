@@ -64,10 +64,9 @@ export default function Terms() {
             If you do not agree, do not use the Service.
           </p>
           <p>
-            You must be at least 18 years old, or the age of legal majority where
-            you live, to create an account or use personalized coaching. You must
-            be legally capable of entering into this agreement. The Service is
-            intended for personal, noncommercial use.
+            You must be at least 18 years old and legally capable of entering into
+            this agreement to create an account or use personalized coaching. The
+            Service is intended for personal, noncommercial use.
           </p>
           <p>
             Your license to the iOS application is governed by Apple&apos;s <a href={standardEula} target="_blank" rel="noreferrer">Standard Licensed Application End User License Agreement</a>.
